@@ -1,5 +1,7 @@
+/*
 package com.finnjohnsen.bitlyandroid.test;
 
+*/
 /*
 Copyright 2010 Finn J Johnsen. All rights reserved.
 
@@ -26,7 +28,8 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 The views and conclusions contained in the software and documentation are those of the
 authors and should not be interpreted as representing official policies, either expressed
 or implied, of Johnsen.
-*/
+*//*
+
 import junit.framework.TestCase;
 
 import com.finnjohnsen.bitlyandroid.test.BitlyAndroid.BitlyReply;
@@ -47,18 +50,22 @@ public class BitlyAndroidTest extends TestCase {
 		bitly = new BitlyAndroid(LOGIN, APIKEY);
 	}
 
-	/**
+	*/
+/**
 	 * Tests to use the class as it should be used by users.
-	 */
+	 *//*
+
 	public void testGetShortUrlAsShouldBeUsed() throws Exception {
 		String urlToShorten = "http://johnsenf.blogspot.com/2010/01/android-app-published-1-week-ago.html";
 		String shortUrl = bitly.getShortUrl(urlToShorten);
 		assertTrue(shortUrl.startsWith("http://bit.ly/"));
 	}
 
-	/**
+	*/
+/**
 	 * Tests bit.ly result codes and messages.
-	 */
+	 *//*
+
 	public void testGetResultMessages() throws Exception {
 		String urlToShorten = "http://johnsenf.blogspot.com/2010/01/android-app-published-1-week-ago.html";
 		BitlyReply reply = bitly.getBitlyReply(urlToShorten);
@@ -67,9 +74,11 @@ public class BitlyAndroidTest extends TestCase {
 		assertEquals("OK", reply.statusCode);
 	}
 
-	/**
+	*/
+/**
 	 * Tests bit.ly shortUrl returned.
-	 */
+	 *//*
+
 	public void testGetShortUrl() throws Exception {
 		String urlToShorten = "http://johnsenf.blogspot.com/2010/01/android-app-published-1-week-ago.html";
 		BitlyReply reply = bitly.getBitlyReply(urlToShorten);
@@ -78,9 +87,11 @@ public class BitlyAndroidTest extends TestCase {
 		assertTrue(shortUrl.startsWith("http://bit.ly/"));
 	}
 
-	/**
+	*/
+/**
 	 * Tests j.mp shortUrl returned.
-	 */
+	 *//*
+
 	public void testGetShortUrlFromJMP() throws Exception {
 		BitlyAndroid.service = BitlyService.JMP;
 		String urlToShorten = "http://johnsenf.blogspot.com/2010/01/android-app-published-1-week-ago.html";
@@ -90,9 +101,11 @@ public class BitlyAndroidTest extends TestCase {
 		assertTrue(shortUrl.startsWith("http://j.mp/"));
 	}
 
-	/**
+	*/
+/**
 	 * Test to confirm different chars work.
-	 */
+	 *//*
+
 	public void testGetShortUrlFromDifferentChars() throws Exception {
 		String urlToShorten = "https://mail.google.com/mail/?shva=1#search/bit.ly";
 		BitlyReply reply = bitly.getBitlyReply(urlToShorten);
@@ -101,3 +114,4 @@ public class BitlyAndroidTest extends TestCase {
 		assertTrue(shortUrl.startsWith("http://bit.ly/"));
 	}
 }
+*/

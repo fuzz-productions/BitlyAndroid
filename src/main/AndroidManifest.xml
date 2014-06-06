@@ -3,7 +3,7 @@
       package="com.finnjohnsen.bitlyandroid.test"
       android:versionCode="1"
       android:versionName="1.0">
-    <application  android:label="BitlyAndroid">
+    <application>
 
     <uses-library android:name="android.test.runner" />
     </application>
